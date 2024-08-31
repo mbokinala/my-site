@@ -1,4 +1,7 @@
 import Image from "next/image";
+
+import profilePic from "@/public/me.png";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   EnvelopeClosedIcon,
@@ -20,14 +23,16 @@ export default function Home() {
           <div className="flex flex-col">
             <h1 className="text-6xl font-bold mb-2">Hi, I&rsquo;m Manav 👋</h1>
             <h2 className="text-primary text-xl">
-              I&rsquo;m a wearer of many hats &mdash; I love engineering, design, and crafting products.
+              I&rsquo;m a wearer of many hats &mdash; I love engineering,
+              design, and building products.
             </h2>
           </div>
 
-          <Avatar className="w-24 h-24">
-            <AvatarImage src="/me.png" />
-            <AvatarFallback>MB</AvatarFallback>
-          </Avatar>
+          <Image
+            src={profilePic}
+            alt="Manav"
+            className="w-24 h-24 rounded-full"
+          />
         </div>
 
         <p className="mt-4 text-lg">
@@ -40,13 +45,14 @@ export default function Home() {
           >
             vly
           </Link>
-          , an LLM-powered platform to design, build, and deploy full-stack web
+          , an LLM-powered platform to design, develop, and deploy full-stack web
           apps without needing to write code.
         </p>
 
         <p className="mt-8 mb-8 text-center mx-auto text-nowrap">
           I&rsquo;m based in SF and always looking out to meet new people and
-          learn about new ideas. <br/>Feel free to reach out at{"  "}
+          learn about new ideas. <br />
+          Feel free to reach out at{"  "}
           <Link href="mailto:manav.bokinala@gmail.com" className="underline">
             manav.bokinala@gmail.com
           </Link>
