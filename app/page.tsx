@@ -49,9 +49,9 @@ export default function Home() {
           apps without needing to write code.
         </p>
 
-        <p className="mt-8 mb-8 text-center mx-auto text-nowrap">
-          I&rsquo;m based in SF and always looking out to meet new people and
-          learn about new ideas. <br />
+        <p className="mt-8 mb-8 text-center mx-auto">
+          I&rsquo;m based in SF and always love meeting new people and
+          learning about new ideas. <br />
           Feel free to reach out at{"  "}
           <Link href="mailto:manav.bokinala@gmail.com" className="underline">
             manav.bokinala@gmail.com
