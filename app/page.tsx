@@ -18,9 +18,9 @@ export default function Home() {
       <div className="w-full px-12 lg:px-0 lg:w-2/5">
         <div className="flex items-center justify-between">
           <div className="flex flex-col">
-            <h1 className="text-6xl font-bold mb-2">Hi, I&rsquo;m Manav{" "}👋</h1>
+            <h1 className="text-6xl font-bold mb-2">Hi, I&rsquo;m Manav 👋</h1>
             <h2 className="text-primary text-xl">
-              I&rsquo;m wearer of many hats - engineer, designer, and founder.
+              I&rsquo;m a wearer of many hats &mdash; I love engineering, design, and crafting products.
             </h2>
           </div>
 
@@ -29,11 +29,6 @@ export default function Home() {
             <AvatarFallback>MB</AvatarFallback>
           </Avatar>
         </div>
-
-        {/* <div className="mt-2 flex gap-1 items-center">
-          <SewingPinIcon className="w-4 h-4" />
-          <p>San Francisco</p>
-        </div> */}
 
         <p className="mt-4 text-lg">
           I&rsquo;m currently building{" "}
@@ -49,8 +44,9 @@ export default function Home() {
           apps without needing to write code.
         </p>
 
-        <p className="mt-8 mb-8 text-center mx-auto">
-          I love meeting new people and learning about new ideas. Feel free to reach out at{"  "}
+        <p className="mt-8 mb-8 text-center mx-auto text-nowrap">
+          I&rsquo;m based in SF and always looking out to meet new people and
+          learn about new ideas. <br/>Feel free to reach out at{"  "}
           <Link href="mailto:manav.bokinala@gmail.com" className="underline">
             manav.bokinala@gmail.com
           </Link>
