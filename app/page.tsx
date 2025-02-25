@@ -43,9 +43,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            vly
+            vly.ai
           </Link>
-          , an LLM-powered platform to design, develop, and deploy full-stack web
+          {" "}(YC F24), an LLM-powered platform to design, develop, and deploy full-stack web
           apps without needing to write code.
         </p>
 
@@ -53,9 +53,7 @@ export default function Home() {
           I&rsquo;m based in SF and always love meeting new people and
           learning about new ideas. <br />
           Feel free to reach out at{"  "}
-          <Link href="mailto:manav.bokinala@gmail.com" className="underline">
-            manav.bokinala@gmail.com
-          </Link>
+          manav [dot] bokinala [at] gmail.com
           .
         </p>
         <div className="mt-4 mb-4 flex justify-center">
