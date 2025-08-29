@@ -2,17 +2,13 @@ import Image from "next/image";
 
 import profilePic from "@/public/me.png";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import SocialButton from "@/components/social-button";
 import {
   EnvelopeClosedIcon,
   GitHubLogoIcon,
   LinkedInLogoIcon,
-  PinBottomIcon,
-  SewingPinIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
-import { Button } from "@/components/ui/button";
-import SocialButton from "@/components/social-button";
 import Link from "next/link";
 
 export default function Home() {
@@ -44,17 +40,16 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             vly.ai
-          </Link>
-          {" "}(YC F24), an LLM-powered platform to design, develop, and deploy full-stack web
-          apps without needing to write code.
+          </Link>{" "}
+          (YC F24), an LLM-powered platform to design, develop, and deploy
+          full-stack web apps without needing to write code.
         </p>
 
         <p className="mt-8 mb-8 text-center mx-auto">
-          I&rsquo;m based in SF and always love meeting new people and
-          learning about new ideas. <br />
+          I&rsquo;m based in SF and always love meeting new people and learning
+          about new ideas. <br />
           Feel free to reach out at{"  "}
-          manav [dot] bokinala [at] gmail.com
-          .
+          manav [dot] bokinala [at] gmail.com .
         </p>
         <div className="mt-4 mb-4 flex justify-center">
           <p className="italic">more coming soon</p>
@@ -78,6 +73,12 @@ export default function Home() {
             href="mailto:manav.bokinala@gmail.com"
           />
         </div>
+
+        <Link href="/boilermaker-connect">
+          <span className="mt-8 flex items-center underline gap-2 justify-center">
+            <img src="/purdue_logo.svg" alt="Purdue" className="w-6 h-6" />
+          </span>
+        </Link>
       </div>
     </main>
   );
