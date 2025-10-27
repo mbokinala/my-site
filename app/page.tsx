@@ -49,7 +49,10 @@ export default function Home() {
           I&rsquo;m based in SF and always love meeting new people and learning
           about new ideas. <br />
           Feel free to reach out at{"  "}
-          manav [dot] bokinala [at] gmail.com .
+          <Link href="mailto:hi@mbokinala.com" className="underline">
+            hi@mbokinala.com
+          </Link>
+          .
         </p>
         <div className="mt-4 mb-4 flex justify-center">
           <p className="italic">more coming soon</p>
@@ -70,7 +73,7 @@ export default function Home() {
           />
           <SocialButton
             Icon={EnvelopeClosedIcon}
-            href="mailto:manav.bokinala@gmail.com"
+            href="mailto:hi@mbokinala.com"
           />
         </div>
 
