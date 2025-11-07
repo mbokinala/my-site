@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="container">
+        <h1>Projects</h1>
+
+        <i>
+            Note: this page is being updated and doesn't contain all my projects
+            yet.
+        </i>
+    </div>
+
+    <div class="project">
+        <p>
+            <a href="https://qr.mbokinala.com" target="blank"
+                >QR Code Generator</a
+            > (<a href="https://github.com/mbokinala/simple-qr" target="#blank"
+                >source</a
+            >) - a dead simple QR code generator with fully customizable
+            payload, size, and foreground/background colors (including
+            transparent backgrounds). Allows downloads as PNG/SVG or copy to
+            clipboard. Runs entirely locally.
+        </p>
+
+        <p>
+            I built this after needing a QR code with a transparent background
+            and not finding a single generator online that wasn't ad-riddled or
+            full of shitty tracking and analytics products.
+        </p>
+    </div>
+</Layout>
+
+<style>
+    .container {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+</style>
