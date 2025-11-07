@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <h1>Reading List</h1>
+    <div class="reading-list">
+        <ul>
+            <li class="done">The Name of the Wind</li>
+            <li class="done">The Wise Man's Fear</li>
+            <li>The Doors of Stone (?)</li>
+        </ul>
+
+        <ul>
+            <li class="done">The Terminal Man</li>
+            <li class="done">The Andromeda Strain</li>
+            <li class="done">Airframe</li>
+            <li class="done">Prey</li>
+            <li>Sphere</li>
+            <li>Congo</li>
+            <li>The Disclosure</li>
+            <li>Timeline</li>
+        </ul>
+
+        <ul>
+            <li class="done">Dune</li>
+        </ul>
+    </div>
+</Layout>
+
+
+<style>
+    h1 {
+        font-weight: normal;
+    }
+
+    .reading-list {
+        display: flex;
+
+        .done {
+            text-decoration: line-through;
+        }
+    }
+</style>

@@ -1,6 +1,15 @@
 {
-  "private": true,
+  "name": "personal-site-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
-    "@vercel/edge": "^0.1.2"
+    "@astrojs/vercel": "^9.0.0",
+    "astro": "^5.15.4"
   }
 }
