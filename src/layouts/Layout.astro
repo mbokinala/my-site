@@ -1,5 +1,6 @@
 ---
 import Nav from "../components/Nav.astro";
+const maxWidth = Astro.props.maxWidth ?? "600px";
 ---
 
 <!doctype html>
@@ -19,7 +20,8 @@ import Nav from "../components/Nav.astro";
 	</body>
 </html>
 
-<style>
+<style define:vars={{maxWidth: maxWidth}}>
+	
 	html,
 	body {
 		margin: 0;
@@ -30,7 +32,7 @@ import Nav from "../components/Nav.astro";
 	}
 
 	#container {
-		max-width: 600px;
+		max-width: var(--maxWidth);
 	}
 </style>
 
@@ -38,6 +40,13 @@ import Nav from "../components/Nav.astro";
 	@font-face {
 		font-family: "Plantin";
 		src: url("/fonts/Plantin.woff2") format("woff2");
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: "Plantin";
+		src: url("/fonts/PlantinItalic.woff2") format("woff2");
+		font-style: italic;
 	}
 
 	body {
@@ -49,8 +58,16 @@ import Nav from "../components/Nav.astro";
 		line-height: 1.5;
 	}
 
+	h1, h2, h3 {
+		font-weight: normal;
+	}
+
 	h1 {
 		font-size: 30px;
-		font-weight: normal;
+		font-weight: 5000;
+	}
+
+	h2 {
+		font-size: 25px;
 	}
 </style>
