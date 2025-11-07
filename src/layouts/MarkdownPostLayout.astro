@@ -1,0 +1,55 @@
+---
+import BaseLayout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title} maxWidth={"900px"}>
+    <h1>{frontmatter.title}</h1>
+    <slot />
+</BaseLayout>
+<style>
+    #container {
+        max-width: 900px;
+    }
+
+    pre {
+        padding: 8px 16px;
+        overflow: auto;
+        border-radius: 4px;
+        background: #343434;
+    }
+</style>
+
+<style is:global>
+    p > code {
+        padding: 4px;
+        border-radius: 4px;
+        background: #ededed;
+        font-family: Consolas, Monaco, "Andale Mono", monospace;
+        direction: ltr;
+        font-size: 14px;
+    }
+
+    pre.astro-code {
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    article pre {
+        padding: 8px 16px;
+        overflow: auto;
+        border-radius: 4px;
+    }
+
+    pre > code {
+        border-radius: 4px;
+        font-family: Consolas, Monaco, "Andale Mono", monospace;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        word-break: normal;
+        white-space: pre;
+        word-spacing: normal;
+        tab-size: 4;
+    }
+</style>
